@@ -1,26 +1,26 @@
-class Zodiacscontroller
+class ZodiacsController < ApplicationController
   def ram
     @prediction = "As your professional dreams unfold, Aries, you may worry about the downside. First, there are new responsibilities that you might doubt your ability to fulfill. Second, you might be catapulted into an uncomfortable new realm of office politics. Don't let these matters put a damper on your enthusiasm. You have what it takes to fulfill the first concern and the wisdom to avoid the second. Onward and upward."
 
-    render("ram.html.erb")
+    render('ram')
   end
 
   def bull
     @prediction = "Recent spiritual breakthroughs might have you feeling both exhilarated and downcast, Taurus. Your sensitive side tells you that this is a definite step forward on your spiritual path, but the logical side might cause you to doubt its reality. Take comfort in the fact that reality is relative and that what you're sensing is at least valid for you. Then keep moving ahead."
 
-    render("bull.html.erb")
+    render('bull')
   end
 
   def twins
     @prediction = "Many of your personal goals have either been met or are in progress, Gemini, and you're feeling exhilarated. However, people around you might have their hands out. You may be asked to contribute to charities or make personal loans to people you don't know well. You want to help whenever you can, but be discriminating about whom you help now. Some may be less than trustworthy."
 
-    render("twins.html.erb")
+    render('twins')
   end
 
   def crab
     @prediction = "Confirmation of professional success could come your way, Cancer, and you're probably feeling excited and motivated to keep pushing. But you may find that increased responsibilities interfere with your social life. You wonder if friends have forgotten you. They haven't, but it will make you feel better if you squeeze in a few hours for your friends each week. Remember what they say about all work and no play."
 
-    render("crab.html.erb")
+    render('crab')
   end
 
   def lion
@@ -36,7 +36,7 @@ class Zodiacscontroller
   end
 
   def scales
-    @fortune = "People close to you might be a bit worried about you, Libra. Too much work and socializing might have you feeling less than your usual self, and perhaps even a little feverish and headachy. If so, this is a good day to take time out, stay home, and rest. Don't worry about sabotaging your success. It will continue. Take a break and your body will reward you with greater clarity and concentration."
+    @prediction = "People close to you might be a bit worried about you, Libra. Too much work and socializing might have you feeling less than your usual self, and perhaps even a little feverish and headachy. If so, this is a good day to take time out, stay home, and rest. Don't worry about sabotaging your success. It will continue. Take a break and your body will reward you with greater clarity and concentration."
 
     render("scales.html.erb")
   end
@@ -54,7 +54,7 @@ class Zodiacscontroller
   end
 
   def goat
-    prediction = "You could be on a real emotional high today because of your success and that of other household members, Capricorn. Your mind may be buzzing with ideas for future expansion, some of which may not be all that workable. However, you should allow yourself a few flights of fancy. Tomorrow your feet will be back on the ground and you will see things in a more practical light."
+    @prediction = "You could be on a real emotional high today because of your success and that of other household members, Capricorn. Your mind may be buzzing with ideas for future expansion, some of which may not be all that workable. However, you should allow yourself a few flights of fancy. Tomorrow your feet will be back on the ground and you will see things in a more practical light."
 
     render("goat.html.erb")
   end
